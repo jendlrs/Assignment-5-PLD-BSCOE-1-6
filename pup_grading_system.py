@@ -8,6 +8,7 @@
     # 1.75          88-90           Very Good
     # 2.0           85-87           Good
     # 2.25          82-84           Good
+    # 2.5           79-81           Satisfactory
     # 2.75          76-78           Satisfactory
     # 3.0           75              Passing
     # 5.0           65-74           Failure
@@ -43,7 +44,12 @@ elif grade >=85 and grade <=87:
 #Step 3: test if 2.25
 elif grade >=82 and grade <=84:
     print("Grade mark: 2.25\nDesription: Good")
-#Step 4: test if 2.75
-#Step 3: test if 3.0
-#Step 4: test if 5.0
+#Step 4: test if 2.5
+elif grade >=79 and grade <=81:
+    print("Grade mark: 2.5\nDesription: Satisfactory")
+#Step 3: test if 2.75
+elif grade >=76 and grade <=78:
+    print("Grade mark: 2.75\nDesription: Satisfactory")
+#Step 4: test if 3.0
+#Step 5: test if 5.0
 #Step 6: test if incomplete, withdrawn, dropped 
