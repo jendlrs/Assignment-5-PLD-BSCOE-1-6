@@ -72,6 +72,5 @@ else:
     else:
         print("Grade Mark: D\nDescription: Dropped\nIt looks like your teacher gave you a dropped mark for exceeding\nthe allowable number of absences or for not attending class since the start of the term.")
 
-print("Done")
 
 
