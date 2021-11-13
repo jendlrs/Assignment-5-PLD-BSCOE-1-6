@@ -69,5 +69,9 @@ else:
         print("It looks like there is a problem occured.\nPlease ask your teacher for clarification")
     elif majorExam== "N" and withdrawn == "Y":
         print("Grade Mark: W\nDescription: Withdrawn")
+    else:
+        print("Grade Mark: D\nDescription: Dropped\nIt looks like your teacher gave you a dropped mark for exceeding\nthe allowable number of absences or for not attending class since the start of the term.")
+
+print("Done")
 
 
