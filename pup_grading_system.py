@@ -67,4 +67,7 @@ else:
         print("Grade Mark: Inc.\nDescription: Incomplete")
     elif (majorExam== "Y") and (withdrawn == "N" or absent== "N"):
         print("It looks like there is a problem occured.\nPlease ask your teacher for clarification")
+    elif majorExam== "N" and withdrawn == "Y":
+        print("Grade Mark: W\nDescription: Withdrawn")
+
 
