@@ -22,6 +22,7 @@
 #Description: Very Good
 
 #Step 1: ask for student grade in percentage, convert, and store
+# Does not round off the grades with decimals yet; only run whole numbers
 grade= float(input("Enter your grade percentage: "))
 
 #Step 2: test if 1.0 
@@ -31,6 +32,8 @@ if grade >=97 and grade <=100:
 elif grade >=94 and grade <=96:
     print("Grade mark: 1.25\nDesription: Excellent")
 #Step 4: test if 1.5
+elif grade >=91 and grade <=93:
+    print("Grade mark: 1.5\nDesription: Very Good")
 #Step 3: test if 1.75
 #Step 4: test if 2.0
 #Step 3: test if 2.25
