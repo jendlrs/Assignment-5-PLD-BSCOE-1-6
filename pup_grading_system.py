@@ -38,7 +38,11 @@ elif grade >=91 and grade <=93:
 elif grade >=88 and grade <=90:
     print("Grade mark: 1.75\nDesription: Very Good")
 #Step 4: test if 2.0
+elif grade >=85 and grade <=87:
+    print("Grade mark: 2.00\nDesription: Good")
 #Step 3: test if 2.25
+elif grade >=82 and grade <=84:
+    print("Grade mark: 2.25\nDesription: Good")
 #Step 4: test if 2.75
 #Step 3: test if 3.0
 #Step 4: test if 5.0
