@@ -28,6 +28,8 @@ grade= float(input("Enter your grade percentage: "))
 if grade >=97 and grade <=100:
     print("Grade mark: 1.00\nDesription: Excellent")
 #Step 3: test if 1.25
+elif grade >=94 and grade <=96:
+    print("Grade mark: 1.25\nDesription: Excellent")
 #Step 4: test if 1.5
 #Step 3: test if 1.75
 #Step 4: test if 2.0
