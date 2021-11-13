@@ -24,7 +24,7 @@
 
 #Step 1: ask for student grade in percentage, convert, and store
 # Does not round off the grades with decimals yet; only run whole numbers
-grade= float(input("Enter your grade percentage: "))
+grade= float(input("Enter grade percentage: "))
 
 #Step 2: test if 1.0 
 if grade >=97 and grade <=100:
@@ -51,5 +51,19 @@ elif grade >=79 and grade <=81:
 elif grade >=76 and grade <=78:
     print("Grade mark: 2.75\nDesription: Satisfactory")
 #Step 4: test if 3.0
+elif grade == 75:
+    print("Grade mark: 3.00\nDesription: Passing")
 #Step 5: test if 5.0
+elif grade >=65 and grade <=74:
+    print("Grade mark: 5.00\nDesription: Failure")
 #Step 6: test if incomplete, withdrawn, dropped 
+else:
+    print("It looks like the grade you entered do not meet the minimum grade percentage to either pass or have a failure mark.\nPlease answer the following questions to know if you are Incomplete, Withdrawn or Dropped.")
+    majorExam=input("Have you take your major exam?\nType Y if Yes and N if No: ")
+    withdrawn= input ("Have you written a letter to withdraw your enrollment?\nType Y if Yes and N if No: ")
+    absent= input ("Have you absent 10 times in the semester?\nType Y if Yes and N if No: ")
+
+    if (majorExam== "N" and withdrawn == "N") and (absent=="N"):
+        print("Grade Mark: Inc.\nDescription: Incomplete")
+    else:
+        print("Withdrawn or Dropped")
