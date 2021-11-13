@@ -22,7 +22,11 @@
 #Description: Very Good
 
 #Step 1: ask for student grade in percentage, convert, and store
+grade= float(input("Enter your grade percentage: "))
+
 #Step 2: test if 1.0 
+if grade >=97 and grade <=100:
+    print("Grade mark: 1.00\nDesription: Excellent")
 #Step 3: test if 1.25
 #Step 4: test if 1.5
 #Step 3: test if 1.75
