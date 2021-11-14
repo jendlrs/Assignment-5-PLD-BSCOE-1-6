@@ -62,20 +62,22 @@ if quest_grade== "Yes":
         print("Grade mark: 5.00\nDesription: Failure")
 #Step 6: test if incomplete, withdrawn, dropped 
     else:
-        print("It looks like the grade you entered do not meet the minimum grade percentage to either pass or have a failure mark.\nPlease answer the following questions to know if you are Incomplete, Withdrawn or Dropped.")
-        majorExam=input("1. Have you take your major exam?\nType Y if Yes and N if No: ")
-        withdrawn= input ("2. Have you written a letter to withdraw your enrollment?\nType Y if Yes and N if No: ")
-        absent= input ("3. Have you absent 10 times in the semester?\nType Y if Yes and N if No: ")
+        if roundOffGrade <=64 and roundOffGrade >0:
+            print("It looks like the grade you entered do not meet the minimum grade percentage to either pass or have a failure mark.\nPlease answer the following questions to know if you are Incomplete, Withdrawn or Dropped.")
+            majorExam=input("1. Have you take your major exam?\nType Y if Yes and N if No: ")
+            withdrawn= input ("2. Have you written a letter to withdraw your enrollment?\nType Y if Yes and N if No: ")
+            absent= input ("3. Have you absent 10 times in the semester?\nType Y if Yes and N if No: ")
 
-        if (majorExam== "N" and withdrawn == "N") and (absent=="N"):
-            print("Grade Mark: Inc.\nDescription: Incomplete")
-        elif (majorExam== "Y") and (withdrawn == "N" or absent== "N"):
-            print("It looks like there is a problem occured.\nPlease ask your teacher for clarification.")
-        elif majorExam== "N" and withdrawn == "Y":
-            print("Grade Mark: W\nDescription: Withdrawn")
+            if (majorExam== "N" and withdrawn == "N") and (absent=="N"):
+                print("Grade Mark: Inc.\nDescription: Incomplete")
+            elif (majorExam== "Y") and (withdrawn == "N" or absent== "N"):
+                print("It looks like there is a problem occured.\nPlease ask your teacher for clarification.")
+            elif majorExam== "N" and withdrawn == "Y":
+                print("Grade Mark: W\nDescription: Withdrawn")
+            else:
+                print("Grade Mark: D\nDescription: Dropped\nIt looks like your teacher gave you a dropped mark for exceeding\nthe allowable number of absences or for not attending class since the start of the term.")
         else:
-            print("Grade Mark: D\nDescription: Dropped\nIt looks like your teacher gave you a dropped mark for exceeding\nthe allowable number of absences or for not attending class since the start of the term.")
-
+            print("The grade you entered is invalid. Grade percentage must be in positive numbers.")
 else:
     print("It looks like you don't have grades\nPlease answer the following questions to know if your status is Incomplete, Withdrawn or Dropped.")
     majorExam=input("1. Have you take your major exam?\nType Y if Yes and N if No: ")
