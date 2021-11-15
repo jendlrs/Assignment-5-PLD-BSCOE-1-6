@@ -5,9 +5,9 @@
 
 #Step 1: ask for 3 numbers convert, and store
 def getnumbers():
-    firstN= int(input("Enter first number: "))
-    secondN= int(input("Enter second number: "))
-    thirdN= int(input ("Enter third number: "))
+    firstN= float(input("Enter first number: "))
+    secondN= float(input("Enter second number: "))
+    thirdN= float(input ("Enter third number: "))
     return firstN, secondN, thirdN
 #Step 2: test the 3 numbers to find the lowest number
 def lowestN(firstNA,secondNA,thirdNA):
