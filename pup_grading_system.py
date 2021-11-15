@@ -24,15 +24,13 @@
 
 #Step 1: ask for student grade in percentage, convert, and store
 # Can round off grades
-#print("Please enter your grade percentage. Type N if you do not have grade percentage attained.\n")
-#quest_grade= input("Answer:  ")from pup import roundOffGrade_
-
-
+print ("Polytechnic University of the Philippines Grading System")
 print("Please enter your grade percentage here. Type 'N' if you do not attained any grade.")
+
 while True:
     try:
         quest_grade= float(input("Answer:  ")) 
-        roundOffGrade = round(quest_grade, 0)
+        roundOffGrade = round(quest_grade)
         print(roundOffGrade)
 
 #Step 2: test if 1.0 
@@ -67,12 +65,11 @@ while True:
             print("Grade mark: 5.00\nDesription: Failure")
 #Step 6: test if incomplete, withdrawn, dropped 
         else:
-            print("The grade you entered is invalid. Grade percentage must be in positive numbers.")
-        break
+            print("The grade you entered is invalid. Grade percentage must be in positive numbers and not greater than 100.")
 
     except ValueError:
         #The following questions is also connected to Section 8 "Grading System"
-        
+
         print("Please answer the following questions to know if your status is Incomplete, Withdrawn or Dropped.")
         majorExam=input("1. Have you take your major exam?\nType Y if Yes and N if No: ")
         withdrawn= input ("2. Have you written a letter to withdraw your enrollment?\nType Y if Yes and N if No: ")
