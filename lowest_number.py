@@ -23,6 +23,10 @@ def lowestN(firstNA,secondNA,thirdNA):
             print (f"The lowest numbers are the first and second number which is {firstNA}")
         elif firstNA == secondNA and (firstNA and secondNA > thirdNA):
             print (f"The lowest number is {thirdNA}")
+        elif firstNA == thirdNA and (firstNA and thirdNA <secondNA):
+            print (f"The lowest numbers are the first and third number which is {firstNA}.")
+        elif firstNA == thirdNA and (firstNA and thirdNA >secondNA):
+            print (f"The lowest number is {secondNA}")
         else:
             print("To be updated")
 
