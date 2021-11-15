@@ -15,8 +15,17 @@ def lowestN(firstNA,secondNA,thirdNA):
         print(f"The lowest number is {firstNA}")
     elif secondNA < firstNA and secondNA <thirdNA:
         print(f"The lowest number is {secondNA}")
-    else:
+    elif thirdNA<firstNA and thirdNA <secondNA:
         print(f"The lowest number is {thirdNA}")
+        #This is for instances that the numbers entered are equal.
+    else:
+        if firstNA == secondNA and (firstNA and secondNA < thirdNA):
+            print (f"The lowest numbers are the first and second number which is {firstNA}")
+        elif firstNA == secondNA and (firstNA and secondNA > thirdNA):
+            print (f"The lowest number is {thirdNA}")
+        else:
+            print("To be updated")
+
 
 first, second, third = getnumbers()
 lowestN(first, second, third)
