@@ -3,13 +3,16 @@
 #Find the lowest number using only if-else statement.
 #Display the lowest number
 print("\nThis program will tell you the lowest number you have entered.\n")
+
 #Step 1: ask for 3 numbers convert, and store
+
 def getnumbers():
     firstN= float(input("Enter first number: "))
     secondN= float(input("Enter second number: "))
     thirdN= float(input ("Enter third number: "))
     return firstN, secondN, thirdN
 #Step 2: test the 3 numbers to find the lowest number
+
 def lowestN(firstNA,secondNA,thirdNA):
     if firstNA < secondNA and firstNA <thirdNA:
         print(f"\nThe lowest number is {firstNA}\n")
