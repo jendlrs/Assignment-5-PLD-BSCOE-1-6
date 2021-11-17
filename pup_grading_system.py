@@ -4,11 +4,11 @@
 #Step 1: ask for student grade in percentage, convert, and store
 # Can round off grades
 print ("\nPolytechnic University of the Philippines Grading System")
-print("\nPlease enter your grade percentage here. Type 'N' if you do not attained any grade.")
+print("\nPlease enter your grade percentage here. Type 'N' or 'No grade' if you do not attain any grade.")
 
 while True:
     try:
-        quest_grade= float(input("Answer:  ")) 
+        quest_grade= float(input(">  ")) 
         roundOffGrade = round(quest_grade)
 
 #Step 2: test if 1.0 
@@ -60,5 +60,5 @@ while True:
         elif majorExam== "N" and withdrawn == "Y":
             print("\nGrade Mark: W\nDescription: Withdrawn\n\nA Withdrawn Mark is given when the student voluntarily withdraws in writing from a subject\nat any time but not less than one (1) month before the final examination\n")
         else:    
-            print("\nGrade Mark: D\nDescription: Dropped\n\nYour teacher gave you a dropped Mark for exceeding the allowable number\nof absences or for not attending class since the start of the term.\n")
+            print("\nGrade Mark: D\nDescription: Dropped\n\nYour teacher gave you a dropped mark for exceeding the allowable number\nof absences or for not attending class since the start of the term.\n")
         break
