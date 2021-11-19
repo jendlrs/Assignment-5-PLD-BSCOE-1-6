@@ -7,7 +7,18 @@
 #18 : Debut
 #19 above : Adult
 
-#Step 1: ask for student grade in percentage, convert, and store
+#Step 1: ask for an age of the person
+def getAge():
+    while True:
+        try:
+            age_= int(input("How old are you? "))
+            break
+        except ValueError:
+            print("The age you have entered is invalid. Please enter your age in numbers")
+            continue
+    return age_
+
+age= getAge()
 #Step 2: test if kid
 #Step 3: test if teen
 #Step 4: test if debut
