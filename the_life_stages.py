@@ -27,13 +27,13 @@ def getAge():
             elif age_ >=19:
                 print(f"\nHi, {name_}! Because you are {age_} years old, you are an Adult.\n")
             else:
-                print("\nThere is no such age in ngative numbers. Please try again.")
+                print("\nThere is no such age in negative numbers. Please try again.")
                 continue
             break
         except ValueError:
             print("\nThe age you have entered is invalid. Please enter your age in numbers")
         continue
-    
+
 age= getAge()
 
 
