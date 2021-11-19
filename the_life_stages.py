@@ -15,9 +15,11 @@ def getAge():
             #Step 2: test if kid
             if age_ >=0 and age_ <=12:
                 print(f"\nHi, user! Because you are {age_} years old, you are still a Kid.\n")
-            else:
-                print("Others")
             #Step 3: test if teen
+            elif age_ >=13 and age_ <=17:
+                print(f"\nHi, user! Because you are {age_} years old, you are now a Teen.\n")
+            else:
+                print("others")
             #Step 4: test if debut
             #Step 5: test if adult
             break
