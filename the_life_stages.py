@@ -7,6 +7,7 @@
 #18 : Debut
 #19 above : Adult
 
+name_= input("\nWhat is your name? ")
 #Step 1: ask for an age of the person
 def getAge():
     while True:
@@ -14,16 +15,16 @@ def getAge():
             age_= int(input("\nHow old are you? "))
             #Step 2: test if kid
             if age_ >=0 and age_ <=12:
-                print(f"\nHi, user! Because you are {age_} years old, you are still a Kid.\n")
+                print(f"\nHi, {name_}! Because you are {age_} years old, you are still a Kid.\n")
             #Step 3: test if teen
             elif age_ >=13 and age_ <=17:
-                print(f"\nHi, user! Because you are {age_} years old, you are now a Teen.\n")
+                print(f"\nHi, {name_}! Because you are {age_} years old, you are now a Teen.\n")
             #Step 4: test if debut
             elif age_ == 18:
-                print(f"\nHi, user! Because you are {age_}, you are a Debutant.\n")
+                print(f"\nHi, {name_}! Because you are {age_}, you are a Debutant.\n")
             #Step 5: test if adult
             elif age_ >=19:
-                print(f"\nHi, user! Because you are 19 years old, you are an Adult.\n")
+                print(f"\nHi, {name_}! Because you are 19 years old, you are an Adult.\n")
             else:
                 print("\nThere is no such age in ngative numbers. Please try again.")
                 continue
@@ -31,7 +32,6 @@ def getAge():
         except ValueError:
             print("\nThe age you have entered is invalid. Please enter your age in numbers")
         continue
-    return age_
 
 age= getAge()
 
