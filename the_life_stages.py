@@ -21,13 +21,16 @@ def getAge():
             #Step 4: test if debut
             elif age_ == 18:
                 print(f"\nHi, user! Because you are {age_}, you are a Debutant.\n")
-            else:
-                print("others")
             #Step 5: test if adult
+            elif age_ >=19:
+                print(f"\nHi, user! Because you are 19 years old, you are an Adult.\n")
+            else:
+                print("\nThere is no such age in ngative numbers. Please try again.")
+                continue
             break
         except ValueError:
             print("\nThe age you have entered is invalid. Please enter your age in numbers")
-            continue
+        continue
     return age_
 
 age= getAge()
